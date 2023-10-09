@@ -10,5 +10,4 @@ public class A {
 
     private void func3() {
     }
-
 }
