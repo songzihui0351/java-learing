@@ -10,6 +10,7 @@ public class DeleteForTwoStr_583 {
         String word2 = "eat";
         System.out.println(minDistance(word1, word2));
     }
+
     public static int minDistance(String word1, String word2) {
         int n1 = word1.length();
         int n2 = word2.length();

@@ -1,13 +1,15 @@
 package Main;
 
-import Main.Crypto.PasswordHasher;
-import Main.Crypto.PasswordHasherOptions;
+interface A {
+    int a = 1;
+}
 
-class Test {
-    public static void main(String[] args) {
-        String encoded = "AQAAAAEAACcQAAAAENpdG4OqqcpPFTLDRC9tbUQ///H6NSd8xt55CxdIuja4Tunpnwktuew9SjKBfHV6iA==";
-        PasswordHasher<String> hasher = new PasswordHasher<String>(new PasswordHasherOptions());
-        System.out.println(hasher.hashPassword("123", "123456"));
-        System.out.println(hasher.verifyHashedPassword(null, encoded, "qwe123"));
+class Test<E> {
+    public static void main(String[] args) throws Error {
+        Class<?> subclass = Test.class.asSubclass(Object.class);
+    }
+
+    public static <T extends A> void test() {
+        System.out.println(T.a);
     }
 }

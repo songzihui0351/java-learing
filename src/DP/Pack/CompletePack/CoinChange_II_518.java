@@ -1,7 +1,5 @@
 package DP.Pack.CompletePack;
 
-import java.util.Arrays;
-
 /*
     完全背包问题: 每件物品可以使用多次
         和01背包类似, 二维是减去k个物品, 一维是正序

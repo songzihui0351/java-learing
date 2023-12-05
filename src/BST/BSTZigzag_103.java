@@ -1,14 +1,15 @@
 package BST;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class BSTZigzag_103 {
+    ArrayList<List<Integer>> res = new ArrayList<>();
+
     public static void main(String[] args) {
         BSTZigzag_103 solution = new BSTZigzag_103();
         List<List<Integer>> list = solution.zigzagLevelOrder(new TreeNode());
     }
-
-    ArrayList<List<Integer>> res = new ArrayList<>();
 
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         bfs(root, 0);

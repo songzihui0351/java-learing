@@ -11,12 +11,12 @@ import java.util.List;
  */
 
 public class GenerateParentheses_22 {
+    static ArrayList<String> res = new ArrayList<>();
+
     public static void main(String[] args) {
         System.out.println(generateParenthesis(1));
         System.out.println(generateParenthesisDP(3));
     }
-
-    static ArrayList<String> res = new ArrayList<>();
 
     public static List<String> generateParenthesis(int n) {
         getParenthesis("", n, n);

@@ -6,6 +6,10 @@ import java.util.Queue;
 import java.util.Stack;
 
 public class BFS_DFS_Iteration {
+    static ArrayList<Integer> array = new ArrayList<>();
+    static Stack<TreeNode> stack = new Stack<>();
+    static Queue<TreeNode> queue = new LinkedList<>();
+
     public static void main(String[] args) {
         TreeNode root = TreeNode.build(new int[]{2, 1, 3, 5, 4, 6, 7}, 0, 7);
         System.out.println(root);
@@ -13,10 +17,6 @@ public class BFS_DFS_Iteration {
         bfs(root);
         System.out.println(array);
     }
-
-    static ArrayList<Integer> array = new ArrayList<>();
-    static Stack<TreeNode> stack = new Stack<>();
-    static Queue<TreeNode> queue = new LinkedList<>();
 
     private static void bfs(TreeNode root) {
         queue.add(root);

@@ -25,6 +25,7 @@ public class StockWithTransactionFee_714 {
 
         return dp[0]; //最后一天持股一定会亏买入最后一只股票的价格
     }
+
     public static int maxProfit1(int[] prices, int fee) {
         int length = prices.length;
         int[][] dp = new int[length][2];
@@ -35,6 +36,6 @@ public class StockWithTransactionFee_714 {
             dp[i][1] = Math.max(dp[i - 1][0] - prices[i], dp[i - 1][1]);
         }
 
-        return dp[length- 1][0];
+        return dp[length - 1][0];
     }
 }

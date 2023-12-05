@@ -1,7 +1,6 @@
 package Greedy;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 /*
     判断ab和ba的大小, 注意string转int的越界问题!

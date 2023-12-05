@@ -19,7 +19,7 @@ public class StockBestTime_IV_188 {
             return maxProfit;
         }
 
-        int[][] dp =  new int[k + 1][length];
+        int[][] dp = new int[k + 1][length];
         for (int i = 1; i <= k; i++) {
             int localMax = dp[i - 1][0] - prices[0]; //上一轮完成了0次交易: 买入第一只股票
             for (int j = 1; j < length; j++) {

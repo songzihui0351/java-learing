@@ -1,6 +1,8 @@
 package Hot100;
 
 public class WordSearch_79 {
+    private final int[][] directions = new int[][]{{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+
     public static void main(String[] args) {
         WordSearch_79 solution = new WordSearch_79();
         char[][] board = new char[][]{
@@ -11,7 +13,6 @@ public class WordSearch_79 {
         System.out.println(solution.exist(board, word));
     }
 
-    private final int[][] directions = new int[][]{{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
     public boolean exist(char[][] board, String word) {
         int row = board.length;
         int col = board[0].length;

@@ -1,7 +1,5 @@
 package DivideAndConquer;
 
-import java.util.ArrayList;
-
 class TreeNode {
     int val;
     TreeNode left;

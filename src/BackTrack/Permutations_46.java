@@ -44,6 +44,7 @@ public class Permutations_46 {
             used[i] = false;
         }
     }
+
     private void backTrack_2(int turn, int[] nums, ArrayList<Integer> path, ArrayList<List<Integer>> res) {
         if (turn == nums.length - 1) {
             res.add(new ArrayList<>(path));

@@ -19,7 +19,7 @@ public class SubsetsII_90 {
         ArrayList<List<Integer>> res = new ArrayList<>();
         boolean[] used = new boolean[nums.length];
         Arrays.sort(nums);
-        backTrack(0, nums, used,  new ArrayList<>(), res);
+        backTrack(0, nums, used, new ArrayList<>(), res);
         return res;
     }
 

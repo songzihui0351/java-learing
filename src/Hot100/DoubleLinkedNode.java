@@ -8,6 +8,7 @@ public class DoubleLinkedNode {
 
     public DoubleLinkedNode() {
     }
+
     public DoubleLinkedNode(int key, int val) {
         this.key = key;
         this.val = val;

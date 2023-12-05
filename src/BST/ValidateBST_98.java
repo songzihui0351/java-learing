@@ -10,12 +10,12 @@ package BST;
 
 public class ValidateBST_98 {
 
+    long lower = Long.MIN_VALUE;
+
     public boolean isValidBST(TreeNode root) {
 //        return validateBST_Recursive(root, Long.MIN_VALUE, Long.MAX_VALUE);
         return validateBST_InOrder(root);
     }
-
-    long lower = Long.MIN_VALUE;
 
     private boolean validateBST_InOrder(TreeNode root) {
         if (root == null) {

@@ -1,12 +1,16 @@
 package BST;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /*
     BFS递归需要借助 层级+DFS 来实现
  */
 
 public class BFS_DFS_Recursive {
+    public static ArrayList<Integer> DFSList = new ArrayList<>();
+    public static List<List<Integer>> BFSList = new ArrayList<>();
+
     public static void main(String[] args) {
         TreeNode root = TreeNode.build(new int[]{2, 1, 3, 5, 4, 6, 7}, 0, 7);
         System.out.println(root);
@@ -15,9 +19,7 @@ public class BFS_DFS_Recursive {
         bfs(root, 0);
         System.out.println(BFSList);
     }
-    public static ArrayList<Integer> DFSList = new ArrayList<>();
 
-    public static List<List<Integer>> BFSList = new ArrayList<>();
     private static void dfs(TreeNode root) {
         if (root == null) {
             return;

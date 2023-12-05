@@ -10,12 +10,12 @@ import java.util.List;
 
 public class AddParentheses_241 {
 
+    static HashMap<String, List<Integer>> numberMap = new HashMap<>();
+
     public static void main(String[] args) {
         String expression = "2*3-4*5";
         System.out.println(diffWaysToCompute(expression));
     }
-
-    static HashMap<String, List<Integer>> numberMap = new HashMap<>();
 
     public static List<Integer> diffWaysToCompute(String expression) {
         if (expression.length() == 0) {

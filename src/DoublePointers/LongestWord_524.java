@@ -11,7 +11,7 @@ import java.util.List;
 public class LongestWord_524 {
     public static void main(String[] args) {
         String s = "abpcplea";
-        ArrayList<String> dictionary = new ArrayList<>(Arrays.asList("ale","apple","monkey","plea"));
+        ArrayList<String> dictionary = new ArrayList<>(Arrays.asList("ale", "apple", "monkey", "plea"));
         System.out.println(findLongestWord(s, dictionary));
     }
 
@@ -25,7 +25,7 @@ public class LongestWord_524 {
                 }
             }
             if (j == word.length()) {
-                if (word.length() > res.length() || (word.length() == res.length() && word.compareTo(res) < 0)){
+                if (word.length() > res.length() || (word.length() == res.length() && word.compareTo(res) < 0)) {
                     res = word;
                 }
             }

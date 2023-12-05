@@ -40,7 +40,7 @@ public class BinarySearchBasic {
         return left;
     }
 
-    private static int search(int [] array, int target) {
+    private static int search(int[] array, int target) {
         int left = 0, right = array.length - 1;
         while (left <= right) {
             int mid = left + (right - left) / 2;

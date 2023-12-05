@@ -11,13 +11,13 @@ import java.util.HashMap;
  */
 
 public class ConstructBT_105 {
+    static HashMap<Integer, Integer> indexMap = new HashMap<>();
+
     public static void main(String[] args) {
         int[] preorder = {3, 9, 20, 15, 7};
         int[] inorder = {9, 3, 15, 20, 7};
         System.out.println(buildTree(preorder, inorder));
     }
-
-    static HashMap<Integer, Integer> indexMap = new HashMap<>();
 
     public static TreeNode buildTree(int[] preorder, int[] inorder) {
         for (int i = 0; i < inorder.length; i++) {

@@ -8,7 +8,7 @@ public class SmallestGT_744 {
     }
 
     public static char nextGreatestLetter(char[] letters, char target) {
-        if (letters[letters.length-1] <= target){
+        if (letters[letters.length - 1] <= target) {
             return letters[0];
         }
         int left = 0, right = letters.length;

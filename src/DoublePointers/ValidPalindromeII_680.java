@@ -21,7 +21,7 @@ public class ValidPalindromeII_680 {
 
     private static boolean isPalindrome(String s, int left, int right) {
         while (left < right) {
-            if (s.charAt(left++) != s.charAt(right--)){
+            if (s.charAt(left++) != s.charAt(right--)) {
                 return false;
             }
         }

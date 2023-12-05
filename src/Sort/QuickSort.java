@@ -4,12 +4,6 @@ import java.util.Arrays;
 
 public class QuickSort {
 
-    public void main(String[] args) {
-        int[] array = {3,1,4,2,6,5};
-        _quickSort(array, 0, array.length);
-        System.out.println(Arrays.toString(array));
-    }
-
     public static void _quickSort(int[] array, int left, int right) {
         if (left < right) {
             int pivot = partitionSort(array, left, right);
@@ -36,6 +30,12 @@ public class QuickSort {
         int tmp = array[i];
         array[i] = array[j];
         array[j] = tmp;
+    }
+
+    public void main(String[] args) {
+        int[] array = {3, 1, 4, 2, 6, 5};
+        _quickSort(array, 0, array.length);
+        System.out.println(Arrays.toString(array));
     }
 }
 

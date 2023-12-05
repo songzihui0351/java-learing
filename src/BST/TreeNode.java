@@ -1,7 +1,5 @@
 package BST;
 
-import DivideAndConquer.ListNode;
-
 import java.util.Arrays;
 
 public class TreeNode {
